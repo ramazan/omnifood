@@ -10,6 +10,32 @@ html {
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
     font-weight: 300px;
+    /*  Bu özellik, eklediğimiz fontu daha güzel şekilde render edecek */
     text-rendering: optimizeLegibility;
-    /*  Bu özellik eklediğimiz fontu mükemmel şekilde render edecek */
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    /*Bunun anlamı soldan ve yukarıdan verilen oranın yarısı kadar */
+    transform: translate(-50%, -50%);
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    /*Bunun anlamı viewport'un %100'ünü getir demektir*/
+    height: 100vh;
+}
+
+h1 {
+    margin: 0;
 }
