@@ -1,8 +1,6 @@
-# omni food
+# Omni Food  - Static HTML5/CSS3 web page
 
 Udemy course: Build Responsive Real World Websites with HTML5 and CSS3
-
-Static HTML5/CSS3 web pa
 
 ![alt header](https://raw.githubusercontent.com/karl-kallavus/omnifood/master/screenshots/omnifood_1.png)
 
