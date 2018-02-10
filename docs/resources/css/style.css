@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    /*  Bu özellik, eklediğimiz fontu daha güzel şekilde render edecek */
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*********** BUTTONS ************/
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 300;
+    border-radius: 200px;
+    transition: background-color 0.5s, color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:active,
+.btn:hover {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+/**************************************/
+
+/*********** HEADINGS ************/
+
+.logo {
+    float: left;
+    width: auto;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 65px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 90%;
+    letter-spacing: 1px;
+    transition: border-bottom 0.5s;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    /*Bunun anlamı soldan ve yukarıdan verilen oranın yarısı kadar */
+    transform: translate(-50%, -50%);
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    /*Bunun anlamı viewport'un %100'ünü getir demektir*/
+    height: 100vh;
+    /* Viewport Height (vh)
+    vh ekran yüksekliğinin 100/1'lik bir bölümüne denk geliyor. */
+    margin-bottom: 80px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 204%;
+    margin-top: 0px;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2:after {
+    content: " ";
+    width: 100px;
+    background-color: #e67e22;
+    display: block;
+    height: 3px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/**************************************/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+/*********** FEATURES ************/
+
+.section-features {
+    width: 1140px;
+    margin: auto;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    line-height: 145%;
+    font-size: 90%;
+}
+
+.icon-big {
+    color: #e67e22;
+    font-size: 300%;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*********** MEALS ************/
+
+.meal-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meal-showcase li {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.2s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+.section-meals {
+    padding-top: 70px;
+}
+
+.app-screen {
+    width: 45%;
+}
+
+.steps-box:first-child {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.steps-box:last-child {
+    margin-top: 70px;
+}
+
+.work-step {
+    margin-bottom: 50px;
+}
+
+.work-step:first-child {
+    margin-top: 20px;
+}
+
+.work-step:last-of-type {
+    margin-bottom: 110px;
+}
+
+.section-steps h2 {
+    margin-top: 70px;
+}
+
+.section-steps .row:last-of-type {
+    margin-bottom: 60px;
+}
+
+.work-step span {
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-top: 6px;
+    font-size: 150%;
+    padding-left: 14px;
+    float: left;
+    margin-right: 20px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 50px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.section-steps {
+    background-color: rgb(234, 233, 233);
+}
+
+.section-cities {
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+
+.cities-list {
+    list-style: none;
+}
+
+.cities-list:first-of-type {
+    margin-top: 20px;
+}
+
+.cities-list i {
+    color: #e67e22;
+    font-size: 115%;
+    float: left;
+    margin-right: 20px;
+}
+
+.cities-list li {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.cities-list p {
+    display: inline;
+}
+
+.cities-img img {
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.cities-img {
+    margin: 0px;
+}
+
+.cities-twitter {
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+}
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/back-customers.jpg);
+    background-size: cover;
+    background-position: center;
+    /*Bunun anlamı viewport'un %100'ünü getir demektir*/
+    height: 560px;
+    width: 100%;
+}
+
+.section-testimonials h2 {
+    padding-top: 40px;
+    color: papayawhip;
+}
+
+.section-testimonials p {
+    color: white;
+    line-height: 25px;
+    padding-right: 50px;
+}
+
+.section-testimonials img {
+    border-radius: 50%;
+    width: 75px;
+    height: auto;
+    margin-top: 25px;
+    vertical-align: middle;
+    margin-bottom: 1.75em;
+    margin-right: 20px;
+}
+
+.section-testimonials span {
+    color: #fff;
+}
+
+.icon-testimonials {
+    color: white;
+    font-size: 200%;
+    display: block;
+    margin-bottom: 10px;
+}
