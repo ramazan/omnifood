@@ -9,7 +9,7 @@ html {
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
-    font-weight: 300px;
+    font-weight: 300;
     /*  Bu özellik, eklediğimiz fontu daha güzel şekilde render edecek */
     text-rendering: optimizeLegibility;
 }
@@ -17,6 +17,86 @@ html {
 .row {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+/*********** BUTTONS ************/
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 300;
+    border-radius: 200px;
+    transition: background-color 0.5s, color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:active,
+.btn:hover {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+/**************************************/
+
+/*********** HEADINGS ************/
+
+.logo {
+    float: left;
+    width: auto;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 65px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 90%;
+    letter-spacing: 1px;
+    transition: border-bottom 0.5s;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
 }
 
 .hero-text-box {
@@ -34,8 +114,79 @@ header {
     background-position: center;
     /*Bunun anlamı viewport'un %100'ünü getir demektir*/
     height: 100vh;
+    /* Viewport Height (vh)
+    vh ekran yüksekliğinin 100/1'lik bir bölümüne denk geliyor. */
+    margin-bottom: 80px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h1 {
-    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 204%;
+    margin-top: 0px;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2:after {
+    content: " ";
+    width: 100px;
+    background-color: #e67e22;
+    display: block;
+    height: 3px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/**************************************/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+
+/*********** SECTIONS ************/
+
+.section-features {
+    width: 1140px;
+    margin: auto;
+}
+
+
+.box{
+    padding: 1%;
+}
+
+.box p {
+    line-height: 145%;
+    font-size: 90%;
+}
+
+.icon-big{
+    color: #e67e22;
+    font-size: 300%;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
 }
